@@ -54,12 +54,7 @@
             PHP Hotel
             </h1>
         </header>
-        <?php
-        foreach($hotels as $hotel){
-            var_dump($hotel);
-        }
-        ?>
-        <!-- <main>
+        <main>
             <table class="table">
                 <thead>
                     <tr>
@@ -71,188 +66,45 @@
                     </tr>
                 </thead>
                 <tbody>
-                    <tr>
-                        <th scope="row">
-                            <?php 
-                            $hotel = $hotels[0];
-                            echo ($hotel['name']);
-                            ?>
-                        </th>
-                        <td>
-                            <?php 
-                            $hotel = $hotels[0];
-                            echo ($hotel['description']);
-                            ?>
-                        </td>
-                        <td>
-                            <?php 
-                            $hotel = $hotels[0];
-                            if($hotel['parking']){
-                                echo "yes";
-                            } else {
-                                echo "no";
-                            }
-                            ?>
-                        </td>
-                        <td>
-                            <?php 
-                            $hotel = $hotels[0];
-                            echo ($hotel['vote']);
-                            ?>
-                        </td>
-                        <td>
-                            <?php 
-                            $hotel = $hotels[0];
-                            echo ($hotel['distance_to_center']);
-                            ?>
-                        </td>
-                    </tr>
-                    <tr>
-                        <th scope="row">
-                            <?php 
-                            $hotel = $hotels[1];
-                            echo ($hotel['name']);
-                            ?>
-                        </th>
-                        <td>
-                            <?php 
-                            $hotel = $hotels[1];
-                            echo ($hotel['description']);
-                            ?>
-                        </td>
-                        <td>
-                            <?php 
-                            $hotel = $hotels[1];
-                            if($hotel['parking']){
-                                echo "yes";
-                            } else {
-                                echo "no";
-                            }
-                            ?>
-                        </td>
-                        <td>
-                            <?php 
-                            $hotel = $hotels[1];
-                            echo ($hotel['vote']);
-                            ?>
-                        </td>
-                        <td>
-                            <?php 
-                            $hotel = $hotels[1];
-                            echo ($hotel['distance_to_center']);
-                            ?>
-                        </td>
-                    </tr>
-                    <tr>
-                        <th scope="row">
-                            <?php 
-                            $hotel = $hotels[2];
-                            echo ($hotel['name']);
-                            ?>
-                        </th>
-                        <td>
-                            <?php 
-                            $hotel = $hotels[2];
-                            echo ($hotel['description']);
-                            ?>
-                        </td>
-                        <td>
-                            <?php 
-                            $hotel = $hotels[2];
-                            if($hotel['parking']){
-                                echo "yes";
-                            } else {
-                                echo "no";
-                            }
-                            ?>
-                        </td>
-                        <td>
-                            <?php 
-                            $hotel = $hotels[2];
-                            echo ($hotel['vote']);
-                            ?>
-                        </td>
-                        <td>
-                            <?php 
-                            $hotel = $hotels[2];
-                            echo ($hotel['distance_to_center']);
-                            ?>
-                        </td>
-                    </tr>
-                    <tr>
-                        <th scope="row">
-                            <?php 
-                            $hotel = $hotels[3];
-                            echo ($hotel['name']);
-                            ?>
-                        </th>
-                        <td>
-                            <?php 
-                            $hotel = $hotels[3];
-                            echo ($hotel['description']);
-                            ?>
-                        </td>
-                        <td>
-                            <?php 
-                            $hotel = $hotels[3];
-                            if($hotel['parking']){
-                                echo "yes";
-                            } else {
-                                echo "no";
-                            }
-                            ?>
-                        </td>
-                        <td>
-                            <?php 
-                            $hotel = $hotels[3];
-                            echo ($hotel['vote']);
-                            ?>
-                        </td>
-                        <td>
-                            <?php 
-                            $hotel = $hotels[3];
-                            echo ($hotel['distance_to_center']);
-                            ?>
-                        </td>
-                    </tr>
-                    <tr>
-                        <th scope="row">
-                            <?php 
-                            $hotel = $hotels[4];
-                            echo ($hotel['name']);
-                            ?>
-                        </th>
-                        <td>
-                            <?php 
-                            $hotel = $hotels[4];
-                            echo ($hotel['description']);
-                            ?>
-                        </td>
-                        <td>
-                            <?php 
-                            $hotel = $hotels[4];
-                            if($hotel['parking']){
-                                echo "yes";
-                            } else {
-                                echo "no";
-                            }
-                            ?>
-                        </td>
-                        <td>
-                            <?php 
-                            $hotel = $hotels[4];
-                            echo ($hotel['vote']);
-                            ?>
-                        </td>
-                        <td>
-                            <?php 
-                            $hotel = $hotels[4];
-                            echo ($hotel['distance_to_center']);
-                            ?>
-                        </td>
-                    </tr>
+                    <?php
+                    foreach($hotels as $hotel){
+                        echo "
+                        <tr>
+                            <th scope='row'>
+                                $hotel[name]
+                            </th>
+                            <td>
+                                $hotel[description]
+                            </td>
+                        ";
+
+                        if ($hotel['parking']) {
+                            echo"
+                            <td>
+                                yes
+                            </td>
+                            ";
+                        } else {
+                            echo"
+                            <td>
+                                no
+                            </td>
+                            ";
+                        }
+                        
+                        echo "
+                            <td>
+                                $hotel[vote]
+                            </td>
+                            <td>
+                                $hotel[distance_to_center]
+                            </td>
+                        </tr>
+                        ";
+                    }
+                    ?>
                 </tbody>
             </table>
-        </main> -->
+        </main>
     </body>
 </html>
