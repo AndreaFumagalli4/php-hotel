@@ -69,255 +69,180 @@
                     <tr>
                         <th scope="row">
                             <?php 
-                            foreach($hotels as $key => $value){
-                                if($key == 0) {
-                                    echo $value['name'];
-                                }
-                            }
+                            $hotel = $hotels[0];
+                            echo ($hotel['name']);
                             ?>
                         </th>
                         <td>
                             <?php 
-                            foreach($hotels as $key => $value){
-                                if($key == 0) {
-                                    echo $value['description'];
-                                }
+                            $hotel = $hotels[0];
+                            echo ($hotel['description']);
+                            ?>
+                        </td>
+                        <td>
+                            <?php 
+                            $hotel = $hotels[0];
+                            if($hotel['parking']){
+                                echo "yes";
+                            } else {
+                                echo "no";
                             }
                             ?>
                         </td>
                         <td>
                             <?php 
-                            foreach($hotels as $key => $value){
-                                if($key == 0) {
-                                    if($value['parking']){
-                                        echo "yes";
-                                    } else {
-                                        echo "no";
-                                    }
-                                }
-                            }
+                            $hotel = $hotels[0];
+                            echo ($hotel['vote']);
                             ?>
                         </td>
                         <td>
                             <?php 
-                            foreach($hotels as $key => $value){
-                                if($key == 0) {
-                                    echo $value['vote'];
-                                }
-                            }
-                            ?>
-                        </td>
-                        <td>
-                            <?php 
-                            foreach($hotels as $key => $value){
-                                if($key == 0) {
-                                    echo $value['distance_to_center'];
-                                }
-                            }
+                            $hotel = $hotels[0];
+                            echo ($hotel['distance_to_center']);
                             ?>
                         </td>
                     </tr>
                     <tr>
                         <th scope="row">
                             <?php 
-                            foreach($hotels as $key => $value){
-                                if($key == 1) {
-                                    echo $value['name'];
-                                }
-                            }
+                            $hotel = $hotels[1];
+                            echo ($hotel['name']);
                             ?>
                         </th>
                         <td>
                             <?php 
-                            foreach($hotels as $key => $value){
-                                if($key == 1) {
-                                    echo $value['description'];
-                                }
+                            $hotel = $hotels[1];
+                            echo ($hotel['description']);
+                            ?>
+                        </td>
+                        <td>
+                            <?php 
+                            $hotel = $hotels[1];
+                            if($hotel['parking']){
+                                echo "yes";
+                            } else {
+                                echo "no";
                             }
                             ?>
                         </td>
                         <td>
                             <?php 
-                            foreach($hotels as $key => $value){
-                                if($key == 1) {
-                                    if($value['parking']){
-                                        echo "yes";
-                                    } else {
-                                        echo "no";
-                                    }
-                                }
-                            }
+                            $hotel = $hotels[1];
+                            echo ($hotel['vote']);
                             ?>
                         </td>
                         <td>
                             <?php 
-                            foreach($hotels as $key => $value){
-                                if($key == 1) {
-                                    echo $value['vote'];
-                                }
-                            }
-                            ?>
-                        </td>
-                        <td>
-                            <?php 
-                            foreach($hotels as $key => $value){
-                                if($key == 1) {
-                                    echo $value['distance_to_center'];
-                                }
-                            }
+                            $hotel = $hotels[1];
+                            echo ($hotel['distance_to_center']);
                             ?>
                         </td>
                     </tr>
                     <tr>
                         <th scope="row">
                             <?php 
-                            foreach($hotels as $key => $value){
-                                if($key == 2) {
-                                    echo $value['name'];
-                                }
-                            }
+                            $hotel = $hotels[2];
+                            echo ($hotel['name']);
                             ?>
                         </th>
                         <td>
                             <?php 
-                            foreach($hotels as $key => $value){
-                                if($key == 2) {
-                                    echo $value['description'];
-                                }
+                            $hotel = $hotels[2];
+                            echo ($hotel['description']);
+                            ?>
+                        </td>
+                        <td>
+                            <?php 
+                            $hotel = $hotels[2];
+                            if($hotel['parking']){
+                                echo "yes";
+                            } else {
+                                echo "no";
                             }
                             ?>
                         </td>
                         <td>
                             <?php 
-                            foreach($hotels as $key => $value){
-                                if($key == 2) {
-                                    if($value['parking']){
-                                        echo "yes";
-                                    } else {
-                                        echo "no";
-                                    }
-                                }
-                            }
+                            $hotel = $hotels[2];
+                            echo ($hotel['vote']);
                             ?>
                         </td>
                         <td>
                             <?php 
-                            foreach($hotels as $key => $value){
-                                if($key == 2) {
-                                    echo $value['vote'];
-                                }
-                            }
-                            ?>
-                        </td>
-                        <td>
-                            <?php 
-                            foreach($hotels as $key => $value){
-                                if($key == 2) {
-                                    echo $value['distance_to_center'];
-                                }
-                            }
+                            $hotel = $hotels[2];
+                            echo ($hotel['distance_to_center']);
                             ?>
                         </td>
                     </tr>
                     <tr>
                         <th scope="row">
                             <?php 
-                            foreach($hotels as $key => $value){
-                                if($key == 3) {
-                                    echo $value['name'];
-                                }
-                            }
+                            $hotel = $hotels[3];
+                            echo ($hotel['name']);
                             ?>
                         </th>
                         <td>
                             <?php 
-                            foreach($hotels as $key => $value){
-                                if($key == 3) {
-                                    echo $value['description'];
-                                }
+                            $hotel = $hotels[3];
+                            echo ($hotel['description']);
+                            ?>
+                        </td>
+                        <td>
+                            <?php 
+                            $hotel = $hotels[3];
+                            if($hotel['parking']){
+                                echo "yes";
+                            } else {
+                                echo "no";
                             }
                             ?>
                         </td>
                         <td>
                             <?php 
-                            foreach($hotels as $key => $value){
-                                if($key == 3) {
-                                    if($value['parking']){
-                                        echo "yes";
-                                    } else {
-                                        echo "no";
-                                    }
-                                }
-                            }
+                            $hotel = $hotels[3];
+                            echo ($hotel['vote']);
                             ?>
                         </td>
                         <td>
                             <?php 
-                            foreach($hotels as $key => $value){
-                                if($key == 3) {
-                                    echo $value['vote'];
-                                }
-                            }
-                            ?>
-                        </td>
-                        <td>
-                            <?php 
-                            foreach($hotels as $key => $value){
-                                if($key == 3) {
-                                    echo $value['distance_to_center'];
-                                }
-                            }
+                            $hotel = $hotels[3];
+                            echo ($hotel['distance_to_center']);
                             ?>
                         </td>
                     </tr>
                     <tr>
                         <th scope="row">
                             <?php 
-                            foreach($hotels as $key => $value){
-                                if($key == 4) {
-                                    echo $value['name'];
-                                }
-                            }
+                            $hotel = $hotels[4];
+                            echo ($hotel['name']);
                             ?>
                         </th>
                         <td>
                             <?php 
-                            foreach($hotels as $key => $value){
-                                if($key == 4) {
-                                    echo $value['description'];
-                                }
+                            $hotel = $hotels[4];
+                            echo ($hotel['description']);
+                            ?>
+                        </td>
+                        <td>
+                            <?php 
+                            $hotel = $hotels[4];
+                            if($hotel['parking']){
+                                echo "yes";
+                            } else {
+                                echo "no";
                             }
                             ?>
                         </td>
                         <td>
                             <?php 
-                            foreach($hotels as $key => $value){
-                                if($key == 0) {
-                                    if($value['parking']){
-                                        echo "yes";
-                                    } else {
-                                        echo "no";
-                                    }
-                                }
-                            }
+                            $hotel = $hotels[4];
+                            echo ($hotel['vote']);
                             ?>
                         </td>
                         <td>
                             <?php 
-                            foreach($hotels as $key => $value){
-                                if($key == 4) {
-                                    echo $value['vote'];
-                                }
-                            }
-                            ?>
-                        </td>
-                        <td>
-                            <?php 
-                            foreach($hotels as $key => $value){
-                                if($key == 4) {
-                                    echo $value['distance_to_center'];
-                                }
-                            }
+                            $hotel = $hotels[4];
+                            echo ($hotel['distance_to_center']);
                             ?>
                         </td>
                     </tr>
