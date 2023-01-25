@@ -54,7 +54,12 @@
             PHP Hotel
             </h1>
         </header>
-        <main>
+        <?php
+        foreach($hotels as $hotel){
+            var_dump($hotel);
+        }
+        ?>
+        <!-- <main>
             <table class="table">
                 <thead>
                     <tr>
@@ -248,6 +253,6 @@
                     </tr>
                 </tbody>
             </table>
-        </main>
+        </main> -->
     </body>
 </html>
